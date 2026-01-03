@@ -1,0 +1,28 @@
+{
+  "name": "fslightbox-angular",
+  "version": "0.1.0",
+  "description": "A capable Angular component for displaying images, videos, or, through custom sources, anything you want in a full-window overlying box.",
+  "main": "index.js",
+  "typings": "fslightbox-angular.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/banthagroup/fslightbox-angular"
+  },
+  "keywords": [
+    "angular fslightbox",
+    "angular lightbox",
+    "angular slide gallery",
+    "angular modal",
+    "fslightbox angular"
+  ],
+  "author": "Piotr Zdziarski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/banthagroup/fslightbox-angular/issues"
+  },
+  "homepage": "https://fslightbox.com/",
+  "peerDependencies": {
+    "@angular/common": "^20.0.0",
+    "@angular/core": "^20.0.0"
+  }
+}

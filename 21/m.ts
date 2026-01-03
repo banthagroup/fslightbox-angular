@@ -1,0 +1,1 @@
+import{ApplicationConfig,provideBrowserGlobalErrorListeners}from"@angular/core";import{bootstrapApplication}from"@angular/platform-browser";import{D}from"./t/d";bootstrapApplication(D,{providers:[provideBrowserGlobalErrorListeners()]}).catch((e)=>console.error(e))
