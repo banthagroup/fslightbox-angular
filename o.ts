@@ -9,7 +9,7 @@ export class FsLightbox {
 	s:any=null;
 	c:any=null;
 	constructor() {var h=inject(ElementRef);
-		afterEveryRender({read:()=>{if(!r)O=require("../../../../1/1/o.js");if(!this.c)return;var u;if(this.c.sources){/*this.o.close();*/this.o=new O.default();u=1;this.o.props.sources=(this.sources()as any).map((e:any)=>{if(typeof e=="string")return e;var p=h.nativeElement.firstChild,c=p.firstElementChild;p.removeChild(c);return c})}this.ob.set(0);
+		afterEveryRender({read:()=>{if(!r)O=require("../../../../1/1/o.js");if(!this.c)return;var u;if(this.c.sources){/*this.o.close();*/this.o=new O.default();u=1;this.o.props.sources=(this.sources()as any).map((e:any)=>{if(typeof e=="string")return e;var p=h.nativeElement.firstChild,c=p.firstElementChild;p.removeChild(c);return c.firstChild})}this.ob.set(0);
 for(var k of l){if(this.c[k]){if(!u){/*this.o.close();*/this.o=new O.default();u=1}this.o.props[k]=this.c[k].currentValue}}
 if((this.c["toggler"]&&!this.c["toggler"].firstChange)||this.openOnMount())op(this);delete this.c
 		}})
