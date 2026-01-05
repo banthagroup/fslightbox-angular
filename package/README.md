@@ -48,8 +48,8 @@ import { Text } from "./Text";
 	</div>`
 })
 export class Demo {
-	toggler = false
-	slide = 1
+	toggler = false;
+	slide = 1;
 	sources = [
 		'https://i.imgur.com/fsyrScY.jpg',
 		'https://www.youtube.com/watch?v=xshEZzpS4CQ',
@@ -60,7 +60,7 @@ export class Demo {
 				value: "An example message"
 			}
 		}
-	]
+	];
 	open(n : number) {
 		this.slide = n;
 		this.toggler = !this.toggler
