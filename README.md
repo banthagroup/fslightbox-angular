@@ -6,8 +6,8 @@ The project's website: https://fslightbox.com.
 
 | Dependency | Version |
 | --- | --- |
-| @angular/core | at least 20.0.0 |
-| @angular/common | at least 20.0.0 |
+| @angular/core | at least 16.0.0 |
+| @angular/common | at least 16.0.0 |
 
 ## Installation
 ### Through a package manager
@@ -27,7 +27,8 @@ $ npm install ./src/lib/fslightbox-angular-1.0.0.tgz
 ## Basic usage 
 ```ts
 import { Component } from "@angular/core";
-import { FsLightbox } from "fslightbox-angular";
+import { FsLightbox } from "fslightbox-angular"; // for Angular versions >= 20.0.0
+// import { FsLightbox } from "fslightbox-angular/16-19"; for Angular versions 16–19
 import { Text } from "./Text";
 
 @Component({

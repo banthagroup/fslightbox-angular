@@ -4,7 +4,8 @@
     "w": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "p": "ng build 1 && mv p/fesm2022/1.mjs p/o.js"
   },
   "dependencies": {
     "@angular/common": "^21.0.0",
@@ -21,6 +22,7 @@
     "@angular/compiler-cli": "^21.0.0",
     "@types/node": "^25.0.3",
     "jsdom": "^27.1.0",
+    "ng-packagr": "^21.0.0",
     "typescript": "~5.9.2",
     "vitest": "^4.0.8"
   }

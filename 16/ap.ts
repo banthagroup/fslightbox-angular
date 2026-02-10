@@ -1,0 +1,1 @@
+import{NgModule}from"@angular/core";import{BrowserModule}from"@angular/platform-browser";import{D}from"./t/d";import{M}from"./m";@NgModule({declarations:[M],imports:[BrowserModule,D],bootstrap:[M]})export class Ap{}

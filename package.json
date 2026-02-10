@@ -1,0 +1,1 @@
+{"scripts":{"p":"npm run --prefix 16 p && npm run --prefix 21 p && webpack"},"devDependencies":{"babel-loader":"^10.0.0","webpack":"^5.105.0","webpack-cli":"^6.0.1"}}

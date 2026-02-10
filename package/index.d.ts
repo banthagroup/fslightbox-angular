@@ -1,0 +1,34 @@
+import * as i0 from "@angular/core";
+export declare class FsLightbox {
+    [s: string]: any;
+    toggler: boolean;
+    sources: any;
+    slide: number;
+    sourceIndex: number;
+    onOpen: (o: any) => void;
+    onClose: (o: any) => void;
+    onInit: (o: any) => void;
+    onShow: (o: any) => void;
+    onSourceLoad: (o: any, s: any, i: number) => void;
+    disableLocalStorage: boolean;
+    types: (string | null)[];
+    type: string;
+    customAttributes: any;
+    autoplay: boolean;
+    autoplays: boolean[];
+    loadOnlyCurrentSource: boolean;
+    slideDistance: number;
+    openOnMount: boolean;
+    exitFullscreenOnClose: boolean;
+    disableSlideSwiping: boolean;
+    disableBackgroundClose: boolean;
+    sourceMargin: number;
+    o: any;
+    ob: any;
+    c: any;
+    constructor();
+    ngOnChanges(changes: any): void;
+    io(e: any): boolean;
+    static ɵfac: i0.ɵɵFactoryDeclaration<FsLightbox, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<FsLightbox, "fslightbox", never, { "toggler": { "alias": "toggler"; "required": false; }; "sources": { "alias": "sources"; "required": false; }; "slide": { "alias": "slide"; "required": false; }; "sourceIndex": { "alias": "sourceIndex"; "required": false; }; "onOpen": { "alias": "onOpen"; "required": false; }; "onClose": { "alias": "onClose"; "required": false; }; "onInit": { "alias": "onInit"; "required": false; }; "onShow": { "alias": "onShow"; "required": false; }; "onSourceLoad": { "alias": "onSourceLoad"; "required": false; }; "disableLocalStorage": { "alias": "disableLocalStorage"; "required": false; }; "types": { "alias": "types"; "required": false; }; "type": { "alias": "type"; "required": false; }; "customAttributes": { "alias": "customAttributes"; "required": false; }; "autoplay": { "alias": "autoplay"; "required": false; }; "autoplays": { "alias": "autoplays"; "required": false; }; "loadOnlyCurrentSource": { "alias": "loadOnlyCurrentSource"; "required": false; }; "slideDistance": { "alias": "slideDistance"; "required": false; }; "openOnMount": { "alias": "openOnMount"; "required": false; }; "exitFullscreenOnClose": { "alias": "exitFullscreenOnClose"; "required": false; }; "disableSlideSwiping": { "alias": "disableSlideSwiping"; "required": false; }; "disableBackgroundClose": { "alias": "disableBackgroundClose"; "required": false; }; "sourceMargin": { "alias": "sourceMargin"; "required": false; }; }, {}, never, never, true, never>;
+}

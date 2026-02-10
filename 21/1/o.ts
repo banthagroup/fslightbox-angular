@@ -1,4 +1,4 @@
-import{Component,afterEveryRender,afterNextRender,input,inject,ElementRef,signal}from"@angular/core";import{NgComponentOutlet}from"@angular/common";
+import{Component,afterEveryRender,input,inject,ElementRef,signal}from"@angular/core";import{NgComponentOutlet}from"@angular/common";
 var r:any,O:any,l=["onOpen","onClose","onInit","onShow","onSourceLoad","disableLocalStorage","types","type","customAttributes","maxYoutubeVideoDimensions","autoplay","autoplays","loadOnlyCurrentSource","slideDistance","openOnMount","exitFullscreenOnClose","disableSlideSwiping","disableBackgroundClose","sourceMargin"];if(typeof window=="object"){O=require("../../../../1/1/o.js");r=1}function op(t:any){var j=t.sourceIndex();if(j===undefined)j=t.slide()-1;t.o.open(j||0)}
 @Component({selector:"fslightbox",imports:[NgComponentOutlet],template:`@if(ob()){<div style="display:none">@for(e of s;track $index){@if(typeof e!="string"){<ng-container *ngComponentOutlet="e.component?e.component:e;inputs:e.inputs"></ng-container>}}</div>}`})
 export class FsLightbox {

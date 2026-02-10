@@ -1,77 +1,76 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
-  "cli": {
-    "packageManager": "npm"
-  },
   "newProjectRoot": "projects",
   "projects": {
-    "1v21": {
+    "1v16": {
       "projectType": "application",
       "schematics": {},
       "root": "./",
-      "sourceRoot": "./",
-      "prefix": "app",
+      "sourceRoot": "../t",
       "architect": {
         "build": {
-          "builder": "@angular/build:application",
+          "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "browser": "m.ts",
-            "tsConfig": "tsconfig.json",
-            "assets": [
-              {
-                "glob": "**/*",
-                "input": "../t"
-              }
-            ]
+            "outputPath": "./dist/1v16",
+            "index": "../index.html",
+            "main": "./mn.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "./tsconfig.json",
+            "assets": ["../t"]
           },
           "configurations": {
             "production": {
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kB",
-                  "maximumError": "1MB"
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "4kB",
-                  "maximumError": "8kB"
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
                 }
               ],
               "outputHashing": "all"
             },
             "development": {
+              "buildOptimizer": false,
               "optimization": false,
+              "vendorChunk": true,
               "extractLicenses": false,
-              "sourceMap": true
+              "sourceMap": true,
+              "namedChunks": true
             }
           },
           "defaultConfiguration": "production"
         },
         "serve": {
-          "builder": "@angular/build:dev-server",
+          "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "1v21:build:production"
+              "browserTarget": "1v16:build:production"
             },
             "development": {
-              "buildTarget": "1v21:build:development"
+              "browserTarget": "1v16:build:development"
             }
           },
           "defaultConfiguration": "development"
         },
-        "test": {
-          "builder": "@angular/build:unit-test"
-        }
       }
     },
     "1": {
       "projectType": "library",
-      "root": "./1",
+      "root": "1",
       "architect": {
         "build": {
-          "builder": "@angular/build:ng-packagr",
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "1/ng-package.json"
+          },
           "configurations": {
             "production": {
               "tsConfig": "1/ts.json"
