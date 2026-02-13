@@ -1,0 +1,1 @@
+var{readFileSync:rf,writeFileSync:wf}=require("fs"),{minify_sync:mn}=require("terser"),cwd=process.cwd();function p(i,o){wf(cwd+i,mn(rf(cwd+o).toString().replace('require("../../../../1/1/w.js");',rf(cwd+"/../../1/1/w.js").toString())).code)}p("/21/p/fesm2022/1.mjs","/package/index.mjs");p("/16/p/esm2022/o.mjs","/package/16-19.mjs");
