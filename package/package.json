@@ -1,8 +1,9 @@
 {
   "name": "fslightbox-angular",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "A capable Angular component for displaying images, videos, or, through custom sources, anything you want in a full-window overlying box.",
-  "module": "index.mjs",
+  "main": "index.mjs",
+  "type": "module",
   "typings": "index.d.ts",
   "exports": {
     ".": {
@@ -15,9 +16,11 @@
     }
   },
   "typesVersions": {
-     "*": {
-        "*": ["./index.d.ts"]
-     }
+    "*": {
+      "*": [
+        "./index.d.ts"
+      ]
+    }
   },
   "repository": {
     "type": "git",
